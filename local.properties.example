@@ -1,0 +1,8 @@
+# Archivo local.properties (NO INCLUIR EN CONTROL DE VERSIONES)
+# Contiene rutas locales del SDK
+# Este archivo se crea automáticamente al abrir el proyecto en Android Studio
+
+# Location of the SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the
+# header note.
+# sdk.dir=/path/to/your/android/sdk
