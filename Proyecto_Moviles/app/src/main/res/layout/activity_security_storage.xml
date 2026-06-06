@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#001a33">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Módulo 3: Almacenamiento Seguro"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#00e5ff"
+                android:layout_marginBottom="24dp" />
+
+            <!-- STATUS MESSAGE -->
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#4dd0e1"
+                android:background="#0d1f2d"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- SHARED PREFERENCES SECTION -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. SharedPreferences (Texto Plano)"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#00e5ff"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/et_key_shared_pref"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Clave"
+                android:backgroundTint="#00bcd4"
+                android:textColorHint="#80d8ff"
+                android:textColor="#00e5ff"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/et_value_shared_pref"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Valor"
+                android:backgroundTint="#00bcd4"
+                android:textColorHint="#80d8ff"
+                android:textColor="#00e5ff"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btn_save_shared_pref"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Guardar"
+                    android:textSize="12sp"
+                    android:backgroundTint="#00bcd4"
+                    android:layout_marginEnd="4dp" />
+
+                <Button
+                    android:id="@+id/btn_load_shared_pref"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Cargar"
+                    android:textSize="12sp"
+                    android:backgroundTint="#00bcd4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_shared_pref_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="#b3e5fc"
+                android:background="#0d1f2d"
+                android:padding="8dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- DATASTORE SECTION -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Jetpack DataStore (Reactiva)"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#00e5ff"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/et_key_data_store"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Clave"
+                android:backgroundTint="#00bcd4"
+                android:textColorHint="#80d8ff"
+                android:textColor="#00e5ff"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/et_value_data_store"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Valor"
+                android:backgroundTint="#00bcd4"
+                android:textColorHint="#80d8ff"
+                android:textColor="#00e5ff"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btn_save_data_store"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Guardar"
+                    android:textSize="12sp"
+                    android:backgroundTint="#00bcd4"
+                    android:layout_marginEnd="4dp" />
+
+                <Button
+                    android:id="@+id/btn_load_data_store"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Cargar"
+                    android:textSize="12sp"
+                    android:backgroundTint="#00bcd4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_data_store_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="#b3e5fc"
+                android:background="#0d1f2d"
+                android:padding="8dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- ENCRYPTED SHARED PREFERENCES SECTION -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. EncryptedSharedPreferences (AES-256)"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#00e5ff"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/et_key_encrypted"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Clave (Token/Credencial)"
+                android:backgroundTint="#00bcd4"
+                android:textColorHint="#80d8ff"
+                android:textColor="#00e5ff"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/et_value_encrypted"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Secreto a Cifrar"
+                android:backgroundTint="#00bcd4"
+                android:textColorHint="#80d8ff"
+                android:textColor="#00e5ff"
+                android:paddingStart="8dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btn_save_encrypted"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Guardar Cifrado"
+                    android:textSize="12sp"
+                    android:backgroundTint="#ff6f00"
+                    android:layout_marginEnd="4dp" />
+
+                <Button
+                    android:id="@+id/btn_load_encrypted"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Cargar"
+                    android:textSize="12sp"
+                    android:backgroundTint="#ff6f00" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_encrypted_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="#ffb74d"
+                android:background="#0d1f2d"
+                android:padding="8dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- CLEAR ALL BUTTON -->
+            <Button
+                android:id="@+id/btn_clear_all"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Limpiar Todos los Datos"
+                android:textSize="14sp"
+                android:backgroundTint="#d32f2f"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

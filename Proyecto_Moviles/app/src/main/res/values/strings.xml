@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Red y Seguridad</string>
+    <string name="title_rest_api">Módulo 1: Conectividad REST</string>
+    <string name="title_security_storage">Módulo 3: Almacenamiento Seguro</string>
+</resources>
