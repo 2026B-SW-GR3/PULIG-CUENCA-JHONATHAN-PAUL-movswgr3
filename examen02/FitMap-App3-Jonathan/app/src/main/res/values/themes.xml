@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FitMapCompetitions" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/fitmap_green</item>
+        <item name="colorSecondary">@color/fitmap_green_dark</item>
+        <item name="colorSurface">@android:color/white</item>
+        <item name="android:colorAccent">@color/fitmap_green</item>
+        <item name="android:statusBarColor">@color/fitmap_sage</item>
+        <item name="android:navigationBarColor">@color/fitmap_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+</resources>

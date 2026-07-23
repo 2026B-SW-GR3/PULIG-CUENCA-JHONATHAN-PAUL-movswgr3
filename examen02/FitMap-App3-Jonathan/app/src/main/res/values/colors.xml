@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fitmap_green">#176B52</color>
+    <color name="fitmap_green_dark">#10503E</color>
+    <color name="fitmap_sage">#B9D4B6</color>
+    <color name="fitmap_sage_light">#DCEAD9</color>
+    <color name="fitmap_background">#F4F7F3</color>
+    <color name="fitmap_ink">#15251F</color>
+    <color name="fitmap_ink_soft">#405C52</color>
+    <color name="fitmap_muted">#71837C</color>
+    <color name="fitmap_stroke">#D9E4DC</color>
+    <color name="route_easy">#2E7D32</color>
+    <color name="route_medium">#F57C00</color>
+    <color name="route_hard">#C62828</color>
+    <color name="route_blue">#1565C0</color>
+</resources>
